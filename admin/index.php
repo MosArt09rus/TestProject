@@ -26,6 +26,8 @@ else {
             <li><a href="products.php">Products</a></li>
             <li><a href="categories.php">Categories</a></li>
             <li><a href="users.php">Users</a></li>
+            <li><a href="../api/items_test.html">ItemsAPITest</a></li>
+            <li><a href="../api/categories_test.html">CategoriesAPITest</a></li>
         </ul>
     </nav>';
     $role = "admin";
