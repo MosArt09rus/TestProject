@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../db/db.php';
+require '../../backend/db/db.php';
 
 
 unset($_SESSION['username']);
@@ -21,19 +21,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($user['userrole'] == "admin") {
             $_SESSION['admin_logged_in'] = true;
             $_SESSION['username'] = $user['login']; 
-            header('Location: ../admin/index.php');
+            header('Location: ../../backend/admin/index.php');
             exit;
         }
         elseif ($user['userrole'] == "moderator") {
             $_SESSION['moderator_logged_in'] = true;
             $_SESSION['username'] = $user['login']; 
-            header('Location: ../admin/index.php');
+            header('Location: ../../backend/admin/index.php');
             exit;
         }
         else {
             $_SESSION['user_logged_in'] = true;
             $_SESSION['username'] = $user['login'];
-            header('Location: ../public/index.php');
+            header('Location: ../../backend/admin/index.php');
             exit;
         }    
     }
@@ -41,4 +41,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = "Неверный логин или пароль.";
     }
 }
-include 'TestProject\frontend\public\login_form.php';
+include '../../frontend/public/login_form.php';
