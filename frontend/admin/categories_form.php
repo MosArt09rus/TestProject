@@ -22,7 +22,7 @@
                     <td><?= htmlspecialchars($category['id']) ?></td>
                     <td><?= htmlspecialchars($category['name']) ?></td>
                     <td>
-                        <a href="edit_category.php?id=<?= htmlspecialchars($category['id']) ?>">Edit</a>
+                        <a href="edit.php?type=categories&id=<?= htmlspecialchars($category['id']) ?>">Edit</a>
                         <a href="delete_category.php?id=<?= htmlspecialchars($category['id']) ?>">Delete</a>
                     </td>
                 </tr>

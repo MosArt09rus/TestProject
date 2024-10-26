@@ -24,7 +24,7 @@
                     <td><?= htmlspecialchars($user['login']) ?></td>
                     <td><?= htmlspecialchars($user['userrole']) ?></td>
                     <td>
-                        <a href="edit_user.php?id=<?= htmlspecialchars($user['id']) ?>">Edit</a>
+                        <a href="edit.php?type=users&id=<?= htmlspecialchars($user['id']) ?>">Edit</a>
                         <a href="delete_user.php?id=<?= htmlspecialchars($user['id']) ?>">Delete</a>
                     </td>
                 </tr>

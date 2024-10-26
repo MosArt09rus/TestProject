@@ -28,7 +28,7 @@
                     <td><?= $product['description'] ?></td>
                     <td><?= $product['category_name'] ?></td>
                     <td>
-                        <a href="edit_product.php?id=<?= $product['id'] ?>">Edit</a>
+                        <a href="edit.php?type=products&id=<?= $product['id'] ?>">Edit</a>
                         <a href="delete_product.php?id=<?= $product['id'] ?>">Delete</a>
                     </td>
                 </tr>
