@@ -5,7 +5,7 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
     const name = document.getElementById('name').value;
 
     // Создаем URL для API
-    const apiUrl = `http://testproject/api/categories.php/?name=${encodeURIComponent(name)}`;
+    const apiUrl = `http://testproject/backend/api/categories.php/?name=${encodeURIComponent(name)}`;
 
     // Открываем новую страницу с результатами
     window.open(apiUrl, '_blank');

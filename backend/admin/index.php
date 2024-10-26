@@ -26,25 +26,11 @@ else {
             <li><a href="products.php">Products</a></li>
             <li><a href="categories.php">Categories</a></li>
             <li><a href="users.php">Users</a></li>
-            <li><a href="../api/items_test.html">ItemsAPITest</a></li>
-            <li><a href="../api/categories_test.html">CategoriesAPITest</a></li>
+            <li><a href="../../frontend/api/items_test.html">ItemsAPITest</a></li>
+            <li><a href="../../frontend/api/categories_test.html">CategoriesAPITest</a></li>
         </ul>
     </nav>';
     $role = "admin";
 }
+include '../../frontend/admin/index_form.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Admin Panel</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <h1>Admin Panel</h1>
-    <a href = "../public/login.php"><?php echo $_SESSION["reg_button"] ?></a>
-    <h3>Добро пожаловать,  <?php echo $_SESSION['username'] ?>! <br> Ваша роль - <?php echo $role ?></h3>
-    <?php echo $AdminIndexHTMLContent ?>
-</body>
-</html>

@@ -17,16 +17,5 @@ else {
         <a href="./index.php">На главную</a>
     </div>';
 }
+include '../../frontend/admin/menu_form.php';
 ?>
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Меню</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-   <?php echo $AdminMenuHTMLContent ?> 
-</body>
-</html>

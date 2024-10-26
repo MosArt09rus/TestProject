@@ -24,21 +24,5 @@ $id = $_GET['id'];
 $stmt = $pdo->prepare("SELECT * FROM categories WHERE id = ?");
 $stmt->execute([$id]);
 $category = $stmt->fetch();
+include '../../frontend/admin/edit_category_form.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Edit Category</title>
-</head>
-<body>
-    <h1>Edit Category</h1>
-    <form method="POST">
-        <input type="hidden" name="id" value="<?= htmlspecialchars($category['id']) ?>">
-        <label>Name:</label>
-        <input type="text" name="name" value="<?= htmlspecialchars($category['name']) ?>" required><br>
-        <button type="submit">Update Category</button>
-    </form>
-</body>
-</html>
