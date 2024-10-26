@@ -24,31 +24,7 @@ else {
 <html>
 <head>
     <title>Меню</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .menu {
-            display: flex;
-            justify-content: center;
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-
-        .menu a {
-            margin: 0 10px;
-            padding: 10px 20px;
-            background-color: #f2f2f2;
-            color: #333;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .menu a:hover {
-            background-color: #ddd;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
    <?php echo $AdminMenuHTMLContent ?> 
