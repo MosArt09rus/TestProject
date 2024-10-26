@@ -11,7 +11,7 @@ else {
 }
 
 require '../../backend/db/db.php';
-$statement = $pdo->query("SELECT * FROM products");
+$statement = $pdo->query("SELECT products.id, products.name, description, price, categories.name AS category_name FROM products JOIN categories ON category_id = categories.id");
 $products = $statement->fetchAll();
 include '../../frontend/public/index_form.php';
 ?>
