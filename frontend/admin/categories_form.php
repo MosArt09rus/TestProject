@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Categories</h1>
-    <a href="add_category.php">Add Category</a>
+    <a href="add.php?type=categories">Add Category</a>
     <table>
         <thead>
             <tr>

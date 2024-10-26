@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Products</h1>
-    <a href="add_product.php">Add Product</a>
+    <a href="add.php?type=products">Add Product</a>
     <table>
         <thead>
             <tr>

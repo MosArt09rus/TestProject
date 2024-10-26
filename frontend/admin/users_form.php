@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Users</h1>
-    <a href="add_user.php">Add User</a>
+    <a href="add.php?type=users">Add User</a>
     <table>
         <thead>
             <tr>
